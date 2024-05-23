@@ -27,14 +27,13 @@ function serie($n) {
 }
 
 // Solicitar el número al usuario
-$numero = (int)readline("Ingresa un número: ");
+$numero = (int)readline("Ingresa un número: "); // Readline lee una línea de entrada desde la consola.
 
 // Obtener la serie de Fibonacci
 $serieFibonacci = serie($numero);
 
 // Imprimir la serie de Fibonacci
+// Convierte en una cadena de texto separada por comas o el signo que digitemos 
 echo "La serie de Fibonacci hasta el número $numero es: " . implode(", ", $serieFibonacci) . "\n";
-?>
-
 
 include 'includes/footer.php'; ?>
